@@ -6,17 +6,19 @@
 /* CSS Custom Properties */
 :root {
   /* === COLORES PRIMARIOS === */
-  --color-solar-yellow: #FFC800;     /* Amarillo Solar - Color principal del branding */
-  --color-action-orange: #FF6600;    /* Naranja Acción - Botones y llamadas principales */
-  --color-natural-green: #4D8B31;    /* Verde Natural - Enfoque ambientalista */
+  --color-solar-yellow: #ffc857;     /* Amarillo Solar - Color principal del branding */
+  --color-action-orange: #E87A30;    /* Naranja Acción - Botones y llamadas principales */
+  --color-natural-teal: #177e89;    /* Verde azulado - Enfoque ambientalista */
   --color-soft-white: #FDFDFF;       /* Blanco Suave - Fondo principal */
+  
 
   /* === COLORES SECUNDARIOS === */
   --color-energy-yellow: #FF9F1C;    /* Amarillo Energía - Gradientes y variaciones */
-  --color-orange-hover: #FF8427;     /* Naranja Suave - Estados hover */
+  --color-orange-hover: #CF6017;     /* Naranja Suave - Estados hover */
   --color-main-black: #1E212B;       /* Negro Principal - Títulos */
   --color-medium-gray: #474647;      /* Gris Medio - Texto secundario */
   --color-border-black: #262626;     /* Negro Bordes - Bordes y separadores */
+  --color-midgnight-green: #084c61;  /* Verde medianoche - Detalles */
 
   /* === TIPOGRAFÍA === */
   --font-serif: 'Lora', serif;       /* Títulos y branding */

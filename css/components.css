@@ -115,7 +115,8 @@ body {
 .btn-primary:hover {
     background-color: var(--color-orange-hover);
     box-shadow: var(--shadow-medium);
-}
+    color: var(--color-soft-white);
+    }
 
 .btn-secondary {
     background-color: transparent;
