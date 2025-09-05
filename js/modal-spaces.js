@@ -1,5 +1,6 @@
  // Variables globales
-        let imagenProyecto = document.getElementsByClassName('space-img');
+        let imgSpace = document.getElementsByClassName('space-img');
+        
         let contenedorModal = document.getElementById('contenedor-modal');
         let indiceActual;
 
@@ -49,15 +50,15 @@
             contador.setAttribute('id', 'modal-counter');
 
             // Encontrar índice actual
-            for (let i = 0; i < imagenProyecto.length; i++) {
-                if (imagenProyecto[i] === this) {
+            for (let i = 0; i < imgSpace.length; i++) {
+                if (imgSpace[i] === this) {
                     indiceActual = i;
                     break;
                 }
             }
 
             // Actualizar contador
-            contador.textContent = `${indiceActual + 1} / ${imagenProyecto.length}`;
+            contador.textContent = `${indiceActual + 1} / ${imgSpace.length}`;
 
             // Ensamblar modal
             modalContentWrapper.appendChild(imagenModal);
@@ -96,13 +97,13 @@
 
         // Función para mostrar imagen siguiente
         function mostrarImagenSiguiente() {
-            indiceActual = (indiceActual + 1) % imagenProyecto.length;
+            indiceActual = (indiceActual + 1) % imgSpace.length;
             actualizarModalImagen();
         }
 
         // Función para mostrar imagen anterior
         function mostrarImagenAnterior() {
-            indiceActual = (indiceActual - 1 + imagenProyecto.length) % imagenProyecto.length;
+            indiceActual = (indiceActual - 1 + imgSpace.length) % imgSpace.length;
             actualizarModalImagen();
         }
 
@@ -113,17 +114,17 @@
             let modalContador = document.getElementById('modal-counter');
 
             if (modalImg && modalTexto && modalContador) {
-                let nuevaImagen = imagenProyecto[indiceActual];
+                let nuevaImagen = imgSpace[indiceActual];
                 modalImg.setAttribute('src', nuevaImagen.getAttribute('src'));
                 modalImg.setAttribute('alt', nuevaImagen.getAttribute('data-title') || 'Espacio del jardín');
                 modalTexto.textContent = nuevaImagen.getAttribute('alt');
-                modalContador.textContent = `${indiceActual + 1} / ${imagenProyecto.length}`;
+                modalContador.textContent = `${indiceActual + 1} / ${imgSpace.length}`;
             }
         }
 
         // Event listeners para las imágenes
-        for (let i = 0; i < imagenProyecto.length; i++) {
-            imagenProyecto[i].addEventListener('click', desplegarModal);
+        for (let i = 0; i < imgSpace.length; i++) {
+            imgSpace[i].addEventListener('click', desplegarModal);
         }
 
         // Event listener para cerrar con Escape
