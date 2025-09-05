@@ -23,7 +23,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__content">
                 <!-- Logo -->
@@ -45,7 +45,7 @@
                 </nav>
 
                 <!-- CTA Button -->
-                <a href="#contacto" class="btn btn-primary header__cta">Inscripción todo el año</a>
+                <a href="#contacto" class="btn btn-primary header__cta">Inscribite</a>
 
                 <!-- Mobile menu toggle -->
                 <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
@@ -516,7 +516,6 @@
 
     <!-- JavaScript -->
     <script>
-       
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -548,18 +547,9 @@
             this.reset();
         });
 
-        // Header scroll behavior
-        let lastScrollY = window.scrollY;
-        const header = document.querySelector('.header');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('header--scrolled');
-            } else {
-                header.classList.remove('header--scrolled');
-            }
-        });
+      
     </script>
+    <script src="./js/header-animation.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 

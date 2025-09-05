@@ -32,20 +32,28 @@
 
 /* ===== HEADER ===== */
 .header {
+    position: relative;
+    background-color: var(--color-soft-white);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+
+.header--scrolled {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(253, 253, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: var(--border-width) solid var(--border-color-neutral);
-    z-index: 1000;
-    transition: all var(--transition-normal);
-}
-
-.header--scrolled {
+    opacity: 1;
     background-color: var(--color-soft-white);
     box-shadow: var(--shadow-medium);
+    transition: var(--transition-normal);
+    z-index: 1000;
+    animation: slideDown var(--transition-slow) ;
+}
+
+/* Animación de salida */
+.header--slide-up {
+    animation: slideUp var(--transition-slow) forwards;
 }
 
 .header__content {
@@ -127,7 +135,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-main-black);
-    margin: 2px 0;
+    margin: 3px 0;
     transition: all var(--transition-normal);
 }
 
@@ -828,5 +836,28 @@
     
     .pedagogical-areas {
         grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
     }
 }
