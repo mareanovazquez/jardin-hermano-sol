@@ -9,15 +9,16 @@
   --color-solar-yellow: #ffc857;     /* Amarillo Solar - Color principal del branding */
   --color-action-orange: #E87A30;    /* Naranja Acción - Botones y llamadas principales */
   --color-natural-teal: #177e89;    /* Verde azulado - Enfoque ambientalista */
-  --color-soft-white: #FDFDFF;       /* Blanco Suave - Fondo principal */
+  --color-white-cold: #F8F7F4;       /* Blanco frío - Fondo principal */
+  --color-white-pearl: #FCFCF7;       /* Blanco perla- Fondo secundario */
   
 
   /* === COLORES SECUNDARIOS === */
   --color-energy-yellow: #FF9F1C;    /* Amarillo Energía - Gradientes y variaciones */
   --color-orange-hover: #CF6017;     /* Naranja Suave - Estados hover */
-  --color-main-black: #1E212B;       /* Negro Principal - Títulos */
+  --color-main-black: #011936;       /* Azul Oscuro Principal - Títulos */
   --color-medium-gray: #474647;      /* Gris Medio - Texto secundario */
-  --color-border-black: #262626;     /* Negro Bordes - Bordes y separadores */
+  --color-border-black: #465362;     /* Negro Bordes - Bordes y separadores */
   --color-midgnight-green: #084c61;  /* Verde medianoche - Detalles */
 
   /* === TIPOGRAFÍA === */

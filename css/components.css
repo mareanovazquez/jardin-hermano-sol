@@ -109,13 +109,13 @@ body {
 
 .btn-primary {
     background-color: var(--color-action-orange);
-    color: var(--color-soft-white);
+    color: var(--color-white-cold);
 }
 
 .btn-primary:hover {
     background-color: var(--color-orange-hover);
     box-shadow: var(--shadow-medium);
-    color: var(--color-soft-white);
+    color: var(--color-white-pearl  );
     }
 
 .btn-secondary {
@@ -155,9 +155,9 @@ body {
 
 /* Cards */
 .card {
-    background-color: var(--color-soft-white);
-    border: var(--border-width) solid var(--border-color-neutral);
-    border-radius: var(--border-radius-sm);
+    background-color: var(--color-white-pearl);
+    border-bottom: 3px solid var(--border-color-hover);
+        border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-subtle);
     transition: box-shadow var(--transition-normal);
 }
