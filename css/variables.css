@@ -81,4 +81,8 @@
   --spacing-xl: 2rem;      /* 32px */
   --spacing-2xl: 3rem;     /* 48px */
   --spacing-3xl: 4rem;     /* 64px */
+
+  /* BTN WHATSAPP */
+    --background-color-whatsapp: #25d366;
+    --background-color-hover-whastapp: #075e54;
 }

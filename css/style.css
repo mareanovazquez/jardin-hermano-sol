@@ -620,60 +620,104 @@ html {
     color: rgba(253, 253, 255, 0.6);
     font-size: var(--font-size-sm);
 }
-
 /* ===== WHATSAPP ===== */
-.whatsapp-button {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-sm) var(--spacing-md);
-    background-color: #25d366;
-    color: white;
-    text-decoration: none;
-    border-radius: var(--border-radius-sm);
-    font-weight: var(--font-weight-medium);
-    transition: all var(--transition-normal);
-}
-
-.whatsapp-button:hover {
-    background-color: #128c7e;
-    color: white;
-}
-
-.whatsapp-float {
+.whatsapp-section__link {
     position: fixed;
+    width: 50px;
+    height: 50px;
     bottom: 20px;
     right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    color: white;
+    background-color: var(--background-color-whatsapp);
+    opacity: 1;
+    color: var(--color-soft-white);
     border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
-    box-shadow: var(--shadow-elevated);
-    z-index: 1000;
-    transition: all var(--transition-normal);
-    animation: pulse 2s infinite;
+    transition: var(--transition-fast);
 }
 
-.whatsapp-float:hover {
-    background-color: #128c7e;
-    transform: scale(1.1);
+.whatsapp-section__link:hover {
+    opacity: 1;
+    background-color: var(--background-color-hover-whastapp);
+    color: var(--color-soft-white);
+    transition: 0.3s;
+}
+/* ========================================
+   BACK TO TOP BUTTON
+   ======================================== */
+
+.back-to-top__container {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--color-energy-yellow);
+    border-radius: 3px;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 99999;
+    margin-left: -60px;
+    transition: var(--transition-fast);
 }
 
-.whatsapp-icon {
-    font-size: 1.5rem;
+.back-to-top__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: var(--transition-medium);
 }
+
+.back-to-top__link:hover {
+    background: var(--hover-bg-color);
+    color: var(--color-natural-green);
+    transform: translateY(-4px);
+    transition: .3s;
+}
+
+.back-to-top__icon {
+    font-size: 1rem;
+    color: var(--color-soft-white);
+    transition: var(--transition-medium);
+}
+
+
 
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
 /* ===== TABLET STYLES ===== */
 @media (min-width: 768px) {
     .container {
@@ -842,25 +886,3 @@ html {
     }
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
