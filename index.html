@@ -516,23 +516,7 @@
 
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const nav = document.getElementById('nav');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            nav.classList.toggle('nav--open');
-            mobileMenuToggle.classList.toggle('mobile-menu-toggle--active');
-        });
-
-        // Close mobile menu when clicking on links
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('nav--open');
-                mobileMenuToggle.classList.remove('mobile-menu-toggle--active');
-            });
-        });
+       
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -576,6 +560,7 @@
             }
         });
     </script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
