@@ -1,5 +1,6 @@
  // Variables globales
         let imgSpace = document.getElementsByClassName('space-img');
+        let titleSpace = document.getElementsByClassName('space-title');
         
         let contenedorModal = document.getElementById('contenedor-modal');
         let indiceActual;
@@ -30,6 +31,9 @@
             let imagenModal = document.createElement('img');
             imagenModal.setAttribute('src', rutaImagen);
             imagenModal.setAttribute('alt', tituloImagen);
+
+            let tituloModal = document.createElement('h3');
+            tituloModal.textContent = tituloImagen;
 
             let textoModal = document.createElement('p');
             textoModal.textContent = textoImagen;
@@ -62,6 +66,7 @@
 
             // Ensamblar modal
             modalContentWrapper.appendChild(imagenModal);
+            modalContentWrapper.appendChild(tituloModal);
             modalContentWrapper.appendChild(textoModal);
             modalContentWrapper.appendChild(btnModalCerrar);
             modalContentWrapper.appendChild(contador);

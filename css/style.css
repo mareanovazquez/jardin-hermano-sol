@@ -397,12 +397,21 @@ html {
     border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
 }
 
+.modal h3 {
+    padding-left: var(--spacing-lg);
+    margin: 0;
+    color: var(--color-main-black);
+    font-size: 1.5rem;
+    }
+
 .modal p {
-    padding: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
     margin: 0;
     color: var(--color-medium-gray);
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Botón cerrar */
