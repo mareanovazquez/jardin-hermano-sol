@@ -1,11 +1,9 @@
 /* variables.css - Jardín Hermano Sol */
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
 /* CSS Custom Properties */
 :root {
   /* === COLORES PRIMARIOS === */
+  --color-ducky-yellow: #fcdd44;    /* Amarillo Ducky - Color principal del branding */
   --color-solar-yellow: #ffc857;     /* Amarillo Solar - Color principal del branding */
   --color-action-orange: #E87A30;    /* Naranja Acción - Botones y llamadas principales */
   --color-natural-teal: #177e89;    /* Verde azulado - Enfoque ambientalista */
@@ -19,11 +17,12 @@
   --color-main-black: #011936;       /* Azul Oscuro Principal - Títulos */
   --color-medium-gray: #474647;      /* Gris Medio - Texto secundario */
   --color-border-black: #465362;     /* Negro Bordes - Bordes y separadores */
-  --color-midgnight-green: #084c61;  /* Verde medianoche - Detalles */
+  --color-midnight-green: #084c61;  /* Verde medianoche - Detalles */
 
   /* === TIPOGRAFÍA === */
   --font-serif: 'Lora', serif;       /* Títulos y branding */
   --font-sans: 'Inter', sans-serif;  /* Contenido y UI */
+  --font-logo: 'Cherry Bomb One', cursive; /*Logo*/
 
   /* === TAMAÑOS DE FUENTE === */
   --font-size-xs: 0.75rem;    /* 12px */
