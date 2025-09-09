@@ -562,12 +562,13 @@ html {
 
 .activity-item {
     text-align: center;
-    padding: var(--spacing-lg);
-    background-color: var(--color-white-cold);
-    border: var(--border-width) solid var(--border-color-neutral);
+    
+    /* background-color: var(--color-white-cold); */
+    /* border: var(--border-width) solid var(--border-color-neutral); */
     border-radius: var(--border-radius-sm);
-    box-shadow: var(--shadow-subtle);
+    /* box-shadow: var(--shadow-subtle); */
     transition: all var(--transition-normal);
+    /* border-bottom: 3px solid rgba(71, 70, 71, 0.2); */
 }
 
 .activity-item:hover {
@@ -579,6 +580,7 @@ html {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
     display: block;
+    color: var(--color-energy-yellow);
 }
 
 .activity-title {
@@ -591,6 +593,10 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .schedule-item {
@@ -632,7 +638,7 @@ html {
     font-size: 2rem;
     width: 60px;
     height: 60px;
-    background-color: var(--color-energy-yellow);
+   
     border-radius: var(--border-radius-md);
     display: flex;
     align-items: center;
@@ -1035,14 +1041,23 @@ html {
     /* Grids */
     .pedagogical-areas {
         grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .spaces-grid {
         grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .activities-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .timeline-item {
