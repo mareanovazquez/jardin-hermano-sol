@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contenidoModal.classList.add('modal-content-wrapper');
 
         // Crear el título del modal
-        let tituloModal = document.createElement('h3');
+        let tituloModal = document.createElement('h4');
         tituloModal.textContent = 'Estamos aquí';
         tituloModal.classList.add('modal-map__title');
 
