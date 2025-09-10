@@ -375,7 +375,8 @@ font-size: 1rem;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(38, 38, 38, 0.75);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,6 +419,57 @@ font-size: 1rem;
     color: var(--color-medium-gray);
     line-height: 1.6;
     font-size: 0.9rem;
+}
+
+/* ===== MODAL MAPA - TAMAÑOS RESPONSIVOS ===== */
+
+/* Modal de mapa más grande que el modal de espacios */
+.modal-content-wrapper--map {
+    max-width: 95vw;
+    max-height: 95vh;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Título del modal mapa */
+.modal-map__title {
+    padding: 20px 20px 10px 20px;
+    margin: 0;
+    color: var(--color-main-black);
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Información adicional del modal mapa */
+.modal-map__info {
+    padding: 0 20px 10px 20px;
+    margin: 0;
+    color: var(--color-medium-gray);
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-normal);
+}
+
+/* Contenedor del mapa */
+.modal-map__container {
+    padding: 0 20px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Iframe del mapa */
+.modal-map__iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: var(--border-radius-sm);
+    flex: 1;
+    min-height: 300px;
 }
 
 /* Botón cerrar */
@@ -1018,9 +1070,23 @@ font-size: 1rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .modal-content-wrapper {
-        max-width: 95vw;
-        max-height: 95vh;
+     .modal-content-wrapper--map {
+        max-width: 85vw;
+        max-height: 90vh;
+        width: 700px;
+        min-height: 550px;
+    }
+    
+    .modal-map__iframe {
+        height: 500px;
+    }
+    
+    .modal-map__title {
+        font-size: 1.6rem;
+    }
+    
+    .modal-map__info {
+        font-size: 1.1rem;
     }
 
 
@@ -1098,6 +1164,19 @@ font-size: 1rem;
     text-align: right;
 }
 
+ .modal-content-wrapper--map {
+        max-width: 85vw;
+        max-height: 90vh;
+        width: 700px;
+        min-height: 550px;
+    }
+    
+    /* Aumentar altura del iframe en tablet */
+    .modal-content-wrapper--map iframe {
+        height: 500px !important;
+    }
+
+
 }
 /* ===== DESKTOP STYLES ===== */
 @media (min-width: 992px) {
@@ -1163,6 +1242,25 @@ font-size: 1rem;
 .modal p {
     font-size: 1.1rem;
 }
+
+.modal-content-wrapper--map {
+        max-width: 80vw;
+        max-height: 85vh;
+        width: 900px;
+        min-height: 600px;
+    }
+    
+    .modal-map__iframe {
+        height: 550px;
+    }
+    
+    .modal-map__title {
+        font-size: 1.8rem;
+    }
+    
+    .modal-map__info {
+        font-size: 1.2rem;
+    }
 }
 
 /* ===== LARGE DESKTOP ===== */
