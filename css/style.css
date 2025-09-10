@@ -36,7 +36,10 @@ html {
 
 /* ===== HEADER ===== */
 .header {
-    position: relative;
+    position: absolute;
+   top: 0; /* Asegurar que esté en la parte superior */
+    left: 0; /* Consistencia cross-browser */
+    right: 0; /* Mejor que width: 100% para evitar overflow */
     background-color: var(--color-white-cold);
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -44,10 +47,10 @@ html {
 
 .header--scrolled {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
+    top: 0; /* Asegurar que esté en la parte superior */
+    left: 0; /* Consistencia cross-browser */
+    right: 0; /* Mejor que width: 100% para evitar overflow */
+    
     background-color: var(--color-white-cold);
     box-shadow: var(--shadow-medium);
     transition: var(--transition-normal);

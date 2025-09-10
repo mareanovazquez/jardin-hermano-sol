@@ -3,7 +3,7 @@ const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    const scrollThreshold = 300;
+    const scrollThreshold = 200;
     
     if (scrollY > scrollThreshold) {
         // Mostrar header con slideDown
