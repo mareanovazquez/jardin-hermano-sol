@@ -7,6 +7,7 @@
 /* ===== RESET Y BASE ===== */
 html {
     scroll-behavior: smooth;
+    font-family: 16px;
 }
 
 * {
@@ -212,7 +213,7 @@ font-size: 1rem;
 }
 
 .hero__subtitle {
-    font-size: var(--font-size-lg);
+    font-size: 1.125rem;
     line-height: var(--line-height-relaxed);
     margin-bottom: var(--spacing-xl);
     opacity: 0.95;
@@ -610,9 +611,15 @@ font-size: 1rem;
     padding: var(--spacing-lg);
 }
 
+.schedule__text-primary {
+    color: var(--color-energy-yellow);
+}
 /* ===== CONTACTO ===== */
 .contact-section {
-    background-color: #f8f9fa;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .contact-content {
@@ -634,23 +641,27 @@ font-size: 1rem;
 
 .contact-method {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: var(--spacing-md);
     text-align: left;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .contact-icon {
     font-size: 2rem;
     width: 60px;
     height: 60px;
-   
     border-radius: var(--border-radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-energy-yellow);
 }
 
+.contact__text-primary {
+    color: var(--color-energy-yellow);
+    font-size: var(--font-size-xl);
+}
 /* ===== FORMS ===== */
 .contact-form-container {
     background-color: var(--color-white-cold);
@@ -946,20 +957,6 @@ font-size: 1rem;
         max-height: 95vh;
     }
 
-    .flecha-izquierda,
-    .flecha-derecha {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-
-    .flecha-izquierda {
-        left: var(--spacing-sm);
-    }
-
-    .flecha-derecha {
-        right: var(--spacing-sm);
-    }
 
     .btn-cerrar {
         width: 35px;
@@ -967,7 +964,7 @@ font-size: 1rem;
         top: var(--spacing-sm);
         right: var(--spacing-sm);
     }
-}
+
 
 /* Título de ejemplo */
 .section-title {
@@ -1001,10 +998,10 @@ font-size: 1rem;
 }
 
 .contact-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    gap: var(--spacing-2xl);
 }
-
 .contact-info {
     text-align: left;
 }
@@ -1035,7 +1032,7 @@ font-size: 1rem;
     text-align: right;
 }
 
-
+}
 /* ===== DESKTOP STYLES ===== */
 @media (min-width: 992px) {
 
