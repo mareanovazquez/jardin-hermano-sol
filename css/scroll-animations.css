@@ -1,0 +1,252 @@
+/* ===== ANIMACIONES DE ENTRADA AL VIEWPORT ===== */
+
+/* Animación genérica base */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== ANIMACIONES ESPECÍFICAS JARDÍN HERMANO SOL ===== */
+
+/* 1. Áreas pedagógicas - Entrada escalonada */
+.pedagogical-area {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pedagogical-area.pedagogy-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Delay escalonado para las áreas pedagógicas */
+.pedagogical-area:nth-child(1) { transition-delay: 0.1s; }
+.pedagogical-area:nth-child(2) { transition-delay: 0.2s; }
+.pedagogical-area:nth-child(3) { transition-delay: 0.3s; }
+.pedagogical-area:nth-child(4) { transition-delay: 0.4s; }
+
+/* 2. Cards de espacios - Efecto lift */
+.space-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.space-card.space-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay para espacios */
+.space-card:nth-child(1) { transition-delay: 0.1s; }
+.space-card:nth-child(2) { transition-delay: 0.2s; }
+.space-card:nth-child(3) { transition-delay: 0.3s; }
+.space-card:nth-child(4) { transition-delay: 0.4s; }
+
+/* 3. Timeline items - Entrada desde la izquierda */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.timeline-item.timeline-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Delay para timeline */
+.timeline-item:nth-child(1) { transition-delay: 0.2s; }
+.timeline-item:nth-child(2) { transition-delay: 0.4s; }
+.timeline-item:nth-child(3) { transition-delay: 0.6s; }
+
+/* 4. Features de inclusión - Entrada desde abajo */
+.feature-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease;
+}
+
+.feature-item.feature-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay para features */
+.feature-item:nth-child(1) { transition-delay: 0.1s; }
+.feature-item:nth-child(2) { transition-delay: 0.2s; }
+.feature-item:nth-child(3) { transition-delay: 0.3s; }
+
+/* 5. Actividades - Efecto escala pequeña */
+.activity-item {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.activity-item.activity-visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Delay escalonado para actividades (8 elementos en grid) */
+.activity-item:nth-child(1) { transition-delay: 0.05s; }
+.activity-item:nth-child(2) { transition-delay: 0.1s; }
+.activity-item:nth-child(3) { transition-delay: 0.15s; }
+.activity-item:nth-child(4) { transition-delay: 0.2s; }
+.activity-item:nth-child(5) { transition-delay: 0.25s; }
+.activity-item:nth-child(6) { transition-delay: 0.3s; }
+.activity-item:nth-child(7) { transition-delay: 0.35s; }
+.activity-item:nth-child(8) { transition-delay: 0.4s; }
+
+/* 6. Schedule items */
+.schedule-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.schedule-item.schedule-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.schedule-item:nth-child(1) { transition-delay: 0.1s; }
+.schedule-item:nth-child(2) { transition-delay: 0.2s; }
+
+/* 7. Contact methods */
+.contact-method {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease;
+}
+
+.contact-method.contact-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-method:nth-child(1) { transition-delay: 0.1s; }
+.contact-method:nth-child(2) { transition-delay: 0.2s; }
+.contact-method:nth-child(3) { transition-delay: 0.3s; }
+
+/* 8. Form container */
+.contact-form-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.contact-form-container.form-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 9. Section headers */
+.section__header {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s ease;
+}
+
+.section__header.header-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== ANIMACIONES ESPECIALES ===== */
+
+/* Animación de fade para elementos que ya están parcialmente visibles */
+.fade-in-only {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.fade-in-only.visible {
+    opacity: 1;
+}
+
+/* Animación para elementos que entran desde la derecha */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.7s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animación con rotación sutil */
+.rotate-in {
+    opacity: 0;
+    transform: rotateY(15deg);
+    transition: all 0.8s ease;
+}
+
+.rotate-in.visible {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    /* Reducir delays en móviles para animaciones más rápidas */
+    .pedagogical-area:nth-child(1) { transition-delay: 0.05s; }
+    .pedagogical-area:nth-child(2) { transition-delay: 0.1s; }
+    .pedagogical-area:nth-child(3) { transition-delay: 0.15s; }
+    .pedagogical-area:nth-child(4) { transition-delay: 0.2s; }
+    
+    .activity-item:nth-child(n) {
+        transition-delay: 0.05s;
+    }
+    
+    /* Reducir intensidad de transformaciones en móviles */
+    .space-card,
+    .timeline-item,
+    .feature-item {
+        transform: translateY(20px);
+    }
+    
+    .timeline-item {
+        transform: translateX(-20px);
+    }
+}
+
+/* ===== PREFERS REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll,
+    .pedagogical-area,
+    .space-card,
+    .timeline-item,
+    .feature-item,
+    .activity-item,
+    .schedule-item,
+    .contact-method,
+    .contact-form-container,
+    .section__header {
+        transition: opacity 0.3s ease;
+        transform: none;
+    }
+    
+    .animate-on-scroll.visible,
+    .pedagogical-area.pedagogy-visible,
+    .space-card.space-visible,
+    .timeline-item.timeline-visible,
+    .feature-item.feature-visible,
+    .activity-item.activity-visible,
+    .schedule-item.schedule-visible,
+    .contact-method.contact-visible,
+    .contact-form-container.form-visible,
+    .section__header.header-visible {
+        transform: none;
+    }
+}
