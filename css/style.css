@@ -727,7 +727,7 @@ html {
 /* ===== FORMS ===== */
 .contact-form-container {
     background-color: var(--color-yellow-background);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-medium);
 }
@@ -735,8 +735,7 @@ html {
 .form-row {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-}
+    }
 
 .form-group {
     margin-bottom: var(--spacing-md);
@@ -1151,7 +1150,8 @@ html {
     }
 
     .form-row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:  1fr;
+        
     }
 
     /* Footer */
@@ -1264,6 +1264,11 @@ html {
 
     .modal-map__info {
         font-size: 1.2rem;
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
     }
 }
 
