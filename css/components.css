@@ -1,7 +1,7 @@
 /* === ESTILOS BASE === */
 body {
     font-family: var(--font-sans);
-    background-color: var(--color-soft-white);
+    background-color: var(--color-white-cold);
     color: var(--color-medium-gray);
     font-size: var(--font-size-base);
     line-height: var(--line-height-loose);
@@ -129,34 +129,11 @@ body {
     color: var(--color-natural-green);
 }
 
-/* Formularios */
-.form-input {
-    font-family: var(--font-sans);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-base);
-    border: var(--border-width) solid var(--border-color-neutral);
-    border-radius: var(--border-radius-sm);
-    padding: 0.75rem;
-    /* 12px */
-    background-color: var(--color-soft-white);
-    color: var(--color-medium-gray);
-    transition: border-color var(--transition-normal);
-}
-
-.form-input:hover {
-    border-color: var(--border-color-hover);
-}
-
-.form-input:focus {
-    outline: none;
-    border: var(--border-width-focus) solid var(--color-action-orange);
-    box-shadow: var(--shadow-focus);
-}
 
 /* Cards */
 .card {
     background-color: var(--color-white-pearl);
-    border-bottom: 3px solid var(--border-color-hover);
+    border-bottom: var(--border-width-xl) solid var(--border-color-hover);
         border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-subtle);
     transition: box-shadow var(--transition-normal);

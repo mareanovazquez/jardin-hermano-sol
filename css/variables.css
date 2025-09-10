@@ -8,7 +8,8 @@
   --color-action-orange: #E87A30;    /* Naranja Acción - Botones y llamadas principales */
   --color-natural-teal: #177e89;    /* Verde azulado - Enfoque ambientalista */
   --color-white-cold: #F8F7F4;       /* Blanco frío - Fondo principal */
-  --color-white-pearl: #FCFCF7;       /* Blanco perla- Fondo secundario */
+  --color-white-pearl: #FCFCF7; 
+  --color-yellow-background: #FFE9A5;      /* Amarillo perla- Fondo contenedores */
   
 
   /* === COLORES SECUNDARIOS === */
@@ -53,7 +54,9 @@
   /* === BORDES === */
   --border-radius-sm: 2px;     /* Estándar para la mayoría de elementos */
   --border-radius-md: 3px;     /* Máximo para elementos grandes */
-  --border-width: 1px;         /* Grosor estándar */
+  --border-width: 1px;   /* Grosor estándar */
+  --border-width-lg: 2px;      /*Grosor medio*/
+  --border-width-xl: 3px;     /*Grosor grueso*/
   --border-width-focus: 2px;   /* Estados de focus */
 
   /* === COLORES DE BORDE === */

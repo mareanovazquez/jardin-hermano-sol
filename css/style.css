@@ -28,7 +28,7 @@ html {
 }
 
 .section--gray {
-    background-color: #f8f9fa;
+    background-color:var(--color-yellow-background);
 }
 
 .section--green {
@@ -662,9 +662,10 @@ font-size: 1rem;
     color: var(--color-energy-yellow);
     font-size: var(--font-size-xl);
 }
+
 /* ===== FORMS ===== */
 .contact-form-container {
-    background-color: var(--color-white-cold);
+    background-color: var(--color-yellow-background);
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-medium);
@@ -687,6 +688,62 @@ font-size: 1rem;
     color: var(--color-main-black);
 }
 
+/* Formularios */
+.form-input {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+    border: none;
+    border-bottom: var(--border-width-xl) solid var(--border-color-neutral);
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem;
+    /* 12px */
+    background-color: var(--color-white-pearl);
+    color: var(--color-medium-gray);
+    transition: border-color var(--transition-normal);
+    width: 100%;
+}
+
+.form-input:hover {
+    border-color: var(--border-color-hover);
+}
+
+
+
+.form-input:selected{
+    border: none;
+    outline: none;
+}
+
+/* Formularios - Agregar después de .form-input */
+.form-select {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+    border: none;
+    border-bottom: var(--border-width-xl) solid var(--border-color-neutral);
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem;
+    background-color: var(--color-white-pearl);
+    color: var(--color-medium-gray);
+    transition: border-color var(--transition-normal);
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-select:hover {
+    border-color: var(--border-color-hover);
+}
+
+.form-select:focus {
+    outline: none;
+    border: var(--border-width-focus) solid var(--color-action-orange);
+    box-shadow: var(--shadow-focus);
+}
+
+.form-select option {
+    color: var(--color-medium-gray);
+}
 .btn-full {
     width: 100%;
 }
@@ -716,7 +773,16 @@ font-size: 1rem;
     justify-content: center;
     margin-bottom: var(--spacing-md);
 }
-
+.footer__logo .logo{
+    font-family: var(--font-logo);
+    color: var(--color-white-cold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.5px var(--color-energy-yellow); 
+    text-shadow: 2px 2px 0px var(--color-energy-yellow);
+    letter-spacing: -.9px;
+    font-size: var(--font-size-3xl);
+    }
 .footer__tagline {
     color: rgba(253, 253, 255, 0.8);
     line-height: var(--line-height-relaxed);
