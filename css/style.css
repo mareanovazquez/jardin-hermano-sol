@@ -82,6 +82,7 @@ html {
     -webkit-text-stroke: 0.5px var(--color-energy-yellow); 
     text-shadow: 2px 2px 0px var(--color-energy-yellow);
     letter-spacing: -.9px;
+    font-size: 1.3rem;
     }
 
 .header__cta {
@@ -115,6 +116,7 @@ html {
 
 .nav__list li {
     margin-bottom: var(--spacing-sm);
+    
 }
 
 .nav__list li:last-child {
@@ -125,6 +127,7 @@ html {
     display: block;
     padding: var(--spacing-sm) 0;
     border-bottom: var(--border-width) solid transparent;
+font-size: 1rem;
 }
 
 /* Mobile Menu Toggle */
@@ -904,8 +907,12 @@ html {
         display: none;
     }
 
+    
+
     .header__cta {
         display: block;
+        padding: var(--spacing-sm);
+        margin-left: var(--spacing-sm);
     }
 
     /* Hero */
