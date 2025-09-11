@@ -3,8 +3,8 @@
 /* CSS Custom Properties */
 :root {
   /* === COLORES PRIMARIOS === */
-  --color-ducky-yellow: #fcdd44;    /* Amarillo Ducky - Color principal del branding */
-  --color-solar-yellow: #ffc857;     /* Amarillo Solar - Color principal del branding */
+  --color-ducky-yellow: #fcdd44;    /* Amarillo Ducky - Color del logo*/
+  /* --color-solar-yellow: #ffc857;   */   /* Amarillo Solar - Color principal del branding */
   --color-action-orange: #E87A30;    /* Naranja Acción - Botones y llamadas principales */
   --color-natural-teal: #177e89;    /* Verde azulado - Enfoque ambientalista */
   --color-white-cold: #F8F7F4;       /* Blanco frío - Fondo principal */
@@ -13,7 +13,7 @@
   
 
   /* === COLORES SECUNDARIOS === */
-  --color-energy-yellow: #FF9F1C;    /* Amarillo Energía - Gradientes y variaciones */
+  --color-energy-yellow: #FF9F1C;    /* Amarillo Energía - sombra del logo */
   --color-orange-hover: #CF6017;     /* Naranja Suave - Estados hover */
   --color-main-black: #011936;       /* Azul Oscuro Principal - Títulos */
   --color-medium-gray: #474647;      /* Gris Medio - Texto secundario */
