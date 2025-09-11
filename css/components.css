@@ -27,9 +27,6 @@ body {
     color: var(--color-medium-gray);
 }
 
-.text-solar-yellow {
-    color: var(--color-solar-yellow);
-}
 
 .text-action-orange {
     color: var(--color-action-orange);
@@ -43,9 +40,6 @@ body {
     color: var(--color-soft-white);
 }
 
-.bg-solar-yellow {
-    background-color: var(--color-solar-yellow);
-}
 
 .bg-action-orange {
     background-color: var(--color-action-orange);
