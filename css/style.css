@@ -724,6 +724,34 @@ html {
     font-size: var(--font-size-xl);
 }
 
+.contact-method p,
+.contact-method address,
+.contact-method time {
+    margin: 0 0 0.25rem 0;
+    color: var(--color-main-black)
+}
+
+.contact-method small {
+    color: var(--color-medium-gray);
+    font-size: 0.85rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.phone-link,
+.email-link {
+    color: var(--color-main-black);
+    text-decoration: none;
+}
+
+.phone-link:hover,
+.email-link:hover {
+    color: var(--color-orange-hover);
+
+}
+
 /* ===== FORMS ===== */
 .contact-form-container {
     background-color: var(--color-yellow-background);
@@ -735,7 +763,7 @@ html {
 .form-row {
     display: grid;
     grid-template-columns: 1fr;
-    }
+}
 
 .form-group {
     margin-bottom: var(--spacing-md);
@@ -1150,8 +1178,8 @@ html {
     }
 
     .form-row {
-        grid-template-columns:  1fr;
-        
+        grid-template-columns: 1fr;
+
     }
 
     /* Footer */
