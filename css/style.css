@@ -626,7 +626,7 @@ html {
 
 .activity-item:hover i {
     filter: drop-shadow(3px 3px 0px rgba(30, 33, 43, 0.12));
-    transform: translateY(-1px); 
+    transform: translateY(-1px);
     transition: 0.5s;
 }
 
@@ -643,7 +643,7 @@ html {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     color: var(--color-main-black);
-        font-family: var(--font-sans);
+    font-family: var(--font-sans);
 }
 
 .schedule-info {
@@ -667,9 +667,7 @@ html {
 
 /* ===== CONTACTO ===== */
 .contact-section {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    
     margin-top: 10px;
 }
 
@@ -681,7 +679,27 @@ html {
 
 .contact-info {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/logo-fondo-transparente.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:150%;
+    opacity: 0.2;
+    /* Ajusta este valor (0.1 a 0.9) */
+    z-index: -1;
+    pointer-events: none;
+   }
+
 
 .contact-methods {
     display: grid;
@@ -1172,8 +1190,11 @@ address {
 
     /* Footer */
     .footer__content {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         text-align: left;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__logo {
@@ -1181,7 +1202,7 @@ address {
     }
 
     .footer__links {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer__contact {
@@ -1259,6 +1280,23 @@ address {
     .contact-methods {
         grid-template-columns: 1fr;
     }
+
+    .contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/logo-fondo-transparente.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size:contain;
+    opacity: 0.3;
+    /* Ajusta este valor (0.1 a 0.9) */
+    z-index: -1;
+    pointer-events: none;
+   }
 
     .modal h3 {
         font-size: 1.5rem;
