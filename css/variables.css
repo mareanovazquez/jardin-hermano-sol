@@ -20,7 +20,7 @@
   --color-midnight-green: #084c61;  /* Verde medianoche - Detalles */
 
   /* === TIPOGRAFÍA === */
-  --font-serif: 'Lora', serif;       /* Títulos y branding */
+  --font-serif: 'Literata', serif;       /* Títulos y branding */
   --font-sans: 'Inter', sans-serif;  /* Contenido y UI */
   --font-logo: 'Cherry Bomb One', cursive; /*Logo*/
 
@@ -41,6 +41,7 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-superBold: 800;
 
   /* === LINE HEIGHT === */
   --line-height-tight: 1.2;
