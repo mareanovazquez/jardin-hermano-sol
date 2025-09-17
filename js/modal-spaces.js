@@ -1,7 +1,7 @@
 // modal-spaces.js - Jardín Hermano Sol - Versión Simplificada (sin navegación)
 
 // Variables globales
-let imgSpace = document.getElementsByClassName('space-img');
+let imgSpace = document.getElementsByClassName('modal-img');
 let contenedorModal = document.getElementById('contenedor-modal');
 
 // Función para desplegar el modal

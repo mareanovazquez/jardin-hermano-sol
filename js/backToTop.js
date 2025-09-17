@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         // Puedes cambiar 'nosotros' por la sección a partir de la cual
         // quieres que aparezca el botón, ya que 'experiencias' no existe en tu HTML
-        let seccionReferencia = document.getElementById('propuesta');
+        let seccionReferencia = document.getElementById('salas');
         let seccionOffsetTop = seccionReferencia.getBoundingClientRect().top + window.scrollY;
 
         if (window.scrollY >= seccionOffsetTop) {
