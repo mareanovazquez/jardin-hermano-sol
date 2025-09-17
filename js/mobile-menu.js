@@ -42,3 +42,20 @@ document.addEventListener('click', function (e) {
         }
     }
 });
+
+// Close menu on touch outside
+document.addEventListener('touchstart', function (e) {
+    if (isMenuOpen) {
+        // Verificar si el touch fue fuera del menú Y del botón toggle  
+        if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            closeMenu();
+        }   
+    }
+});
+
+// Close menu on window resize
+window.addEventListener('resize', function () {
+    if (isMenuOpen) {
+        closeMenu();
+    }
+});
