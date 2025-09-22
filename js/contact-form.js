@@ -82,24 +82,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         Promise.all([sendToFirebase(), sendToFormspree()])
             .then(function (results) {
-                const formspreeResponse = results[1];
-                if (formspreeResponse.ok) {
-                    showToast(
-                        '¡Gracias por tu mensaje! <br><br>' +
-                        'Nos pondremos en contacto muy pronto.<br><br>',
-                        'success',
-                        5000
-                    );
-                    form.reset();
-                } else {
-                    showToast(
-                        '¡Gracias por tu mensaje! <br><br>' +
-                        'Nos pondremos en contacto muy pronto.<br><br>',
-                        'success',
-                        5000
-                    );
-                    form.reset();
-                }
+                showToast(
+                    '¡Gracias por tu mensaje! <br><br>' +
+                    'Nos pondremos en contacto muy pronto.<br><br>',
+                    'success',
+                    5000
+                );
+                form.reset();
                 resetButton();
             })
             .catch(function (error) {
