@@ -1,3 +1,7 @@
+//el formulario envía a Firebase y a Formspree simultáneamente
+// Si ambos envíos son exitosos, muestra mensaje de éxito
+// Si uno falla, intenta el otro y muestra mensaje acorde
+// Si ambos fallan, muestra mensaje de error
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     
@@ -13,21 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const interes = document.getElementById('interes').value;
         const mensaje = document.getElementById('mensaje').value;
 
-        // Mapear el valor del select a los nombres de sala correctos
-        const classroomMapping = {
-            'sala-1': 'sala de 1',
-            'sala-2': 'sala de 2', 
-            'sala-3': 'sala de 3',
-            'colonia': 'colonia'
-        };
-
+      
         // Creamos un objeto con los datos del formulario y metadatos adicionales para Firebase
         const formData = {
             name: nombre.trim(),
             lastName: apellido.trim(),
             email: email.trim().toLowerCase(),
             phone: parseInt(telefono.replace(/\s/g, '')), // Convertir a número, remover espacios
-            classroom: classroomMapping[interes] || interes,
+            classroom: interes,
             mensaje: mensaje.trim(),
             createdAt: firebase.firestore.FieldValue.serverTimestamp(), // Timestamp del servidor
             isActive: true,               // Campo para marcar si el mensaje está activo
@@ -49,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
             formspreeData.append('Apellido', apellido);
             formspreeData.append('Email', email);
             formspreeData.append('Telefono', telefono);
-            formspreeData.append('Sala_Interes', classroomMapping[interes] || interes);
+            formspreeData.append('Sala_Interes', interes);
             formspreeData.append('Mensaje', mensaje);
-            formspreeData.append('_subject', `Mensaje de ${nombre} ${apellido} - ${classroomMapping[interes] || interes}`);
+            formspreeData.append('_subject', `Mensaje de ${nombre} ${apellido} - sobre ${interes}`);
 
             return fetch(formspreeUrl, {
                 method: 'POST',
