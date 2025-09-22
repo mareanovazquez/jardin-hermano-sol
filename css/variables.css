@@ -18,6 +18,8 @@
   --color-medium-gray: #474647;      /* Gris Medio - Texto secundario */
   --color-border-black: #465362;     /* Negro Bordes - Bordes y separadores */
   --color-midnight-green: #084c61;  /* Verde medianoche - Detalles */
+  --color-toast-success: #4B9560; /* Verde mensaje de éxito */
+  --color-toast-error: #8F0808; /*rojo mensaje de error */
 
   /* === TIPOGRAFÍA === */
   --font-serif: 'Literata', serif;       /* Títulos y branding */
