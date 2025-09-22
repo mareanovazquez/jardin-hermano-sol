@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         '¡Gracias por tu mensaje! <br><br>' +
                         'Nos pondremos en contacto muy pronto.<br><br>',
                         'success',
-                        6000
+                        5000
                     );
                     form.reset();
                 } else {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         '¡Gracias por tu mensaje! <br><br>' +
                         'Nos pondremos en contacto muy pronto.<br><br>',
                         'success',
-                        6000
+                        5000
                     );
                     form.reset();
                 }
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             '¡Gracias por tu mensaje! <br><br>' +
                             'Nos pondremos en contacto muy pronto.<br><br>',
                             'success',
-                            6000
+                            5000
                         );
                         form.reset();
                         resetButton();
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         '¡Gracias por tu mensaje! <br><br>' +
                                         'Nos pondremos en contacto muy pronto.<br><br>',
                                         'success',
-                                        6000
+                                        5000
                                     );
                                     form.reset();
                                 } else {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         'Hubo un problema al enviar tu mensaje. 😔<br><br>' +
                                         'Por favor intenta nuevamente en unos minutos, o contáctanos directamente por WhatsApp.<br><br>',
                                         'error',
-                                        6000
+                                        5000
                                     );
                                 }
                                 resetButton();
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     'Hubo un problema al enviar tu mensaje. 😔<br><br>' +
                                     'Por favor intenta nuevamente en unos minutos, o contáctanos directamente por WhatsApp.<br><br>',
                                     'error',
-                                    6000
+                                    5000
                                 );
                                 resetButton();
                             });

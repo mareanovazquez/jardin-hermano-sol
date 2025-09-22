@@ -1115,31 +1115,31 @@ address {
 /* ===== TOAST MESSAGES ===== */
 .toast {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     left: 50%;
+    width: 90%;
     transform: translateX(-50%) translateY(100px);
     background-color: var(--color-main-black, #011936);
-    color: var(--color-white-cold, #F8F7F4);
-    padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
+    color: var(--color-white-pearl, #FCFCF7);
+    padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius-sm, 2px);
     opacity: 0;
     transition: all var(--transition-slow, 0.3s) ease;
     z-index: 9999;
-    max-width: 90vw;
-    min-width: 300px;
     font-family: var(--font-sans, 'Inter', sans-serif);
     font-size: var(--font-size-base, 1rem);
-    text-align: center;
+    text-align: left;
     box-shadow: 0 8px 25px rgba(1, 25, 54, 0.15);
 }
 
 .toast--show {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
+    transition: all 0.7s ease;
 }
 
 .toast--success {
-    background-color: var(--color-toast-success, #487534);
+    background-color: var(--color-toast-success, #4B9560);
 }
 
 .toast--error {
@@ -1360,7 +1360,7 @@ address {
     }
 
     .toast {
-        bottom: 15px;
+        bottom: 50px;
         left: 60%;
         transform: translateY(100px);
         width: 25%;
