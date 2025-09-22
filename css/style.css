@@ -1112,6 +1112,42 @@ address {
     }
 }
 
+/* ===== TOAST MESSAGES ===== */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: var(--color-main-black, #011936);
+    color: var(--color-white-cold, #F8F7F4);
+    padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
+    border-radius: var(--border-radius-sm, 2px);
+    opacity: 0;
+    transition: all var(--transition-slow, 0.3s) ease;
+    z-index: 9999;
+    max-width: 90vw;
+    min-width: 300px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    font-size: var(--font-size-base, 1rem);
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(1, 25, 54, 0.15);
+}
+
+.toast--show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.toast--success {
+    background-color: var(--color-toast-success, #487534);
+}
+
+.toast--error {
+    background-color: var(--color-toast-error, #8F0808);
+}
+
+
+
 /* ===== TABLET STYLES ===== */
 @media (min-width: 768px) {
     .container {
@@ -1323,6 +1359,18 @@ address {
         grid-row-start: 5;
     }
 
+    .toast {
+        bottom: 15px;
+        left: 60%;
+        transform: translateY(100px);
+        width: 25%;
+
+        max-width: none;
+    }
+
+    .toast--show {
+        transform: translateY(0);
+    }
 
 }
 
