@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Función para enviar a Formspree
         function sendToFormspree() {
-            const formspreeUrl = 'https://formspree.io/f/xnnbnedpeeee';
+            const formspreeUrl = 'https://formspree.io/f/xblzjzne';
 
             const formspreeData = new FormData();
             formspreeData.append('Nombre', nombre);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (telefono.trim()) { // Solo agregar si hay teléfono
                 formspreeData.append('Telefono', telefono);
             }
-            formspreeData.append('Sala_Interes', interes);
+            formspreeData.append('Sala de interés', interes);
             formspreeData.append('Mensaje', mensaje);
             formspreeData.append('_subject', `Mensaje de ${nombre} ${apellido} - ${interes}`);
 
@@ -68,9 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Sin validación de teléfono - es opcional y flexible
-
-        const submitButton = form.querySelector('button[type="submit"]');
+        const submitButton = document.getElementById('submit-button__contact');
         const originalButtonText = submitButton.textContent; // Capturar texto original
         submitButton.disabled = true;
         submitButton.textContent = 'Enviando...'; // Cambiar texto de forma segura
