@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mostrar y ocultar botón "Volver arriba"
     let btnBackToTop = document.getElementById('btnBackToTop');
 
-    window.addEventListener('scroll', function() {
-        // Puedes cambiar 'nosotros' por la sección a partir de la cual
-        // quieres que aparezca el botón, ya que 'experiencias' no existe en tu HTML
-        let seccionReferencia = document.getElementById('salas');
-        let seccionOffsetTop = seccionReferencia.getBoundingClientRect().top + window.scrollY;
+    window.addEventListener('scroll', function () {
+        // Obtener la posición actual del scroll una sola vez
+        const scrollY = window.scrollY;
+        // Altura específica en píxeles a partir de la cual aparece el botón
+        const alturaReferencia = 300; // 300px desde el top de la página
 
-        if (window.scrollY >= seccionOffsetTop) {
+        if (scrollY >= alturaReferencia) {
             btnBackToTop.style.marginLeft = '0px';
-        } else if (window.scrollY <= seccionOffsetTop / 2) {
+        } else if (scrollY <= alturaReferencia / 2) {
             btnBackToTop.style.marginLeft = '-60px';
         }
     });

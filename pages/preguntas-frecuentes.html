@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Jardín Hermano Sol</title>
+    <meta name="description"
+        content="Respondemos las preguntas más frecuentes sobre nuestro jardín de infantes: inscripción, horarios, alimentación, actividades y más.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/faq.css">
+
+    <!-- Google Fonts preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/31ff4c85db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header--scrolled" id="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- Logo -->
+                <div class="header__logo">
+                    <a href="../index.html" style="text-decoration: none;">
+                        <h1 class="logo">Jardín Modelo Hermano Sol</h1>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html#salas" class="nav-link">Salas</a></li>
+                        <li><a href="../index.html#espacios" class="nav-link">Espacios</a></li>
+                        <li><a href="../index.html#propuesta" class="nav-link">Propuesta</a></li>
+                        <li><a href="../index.html#actividades" class="nav-link">Actividades</a></li>
+                        <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="../index.html#contacto" class="btn btn-primary header__cta">Inscribite</a>
+
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="faq-hero">
+            <div class="container">
+                <h1 class="faq-hero__title">Preguntas Frecuentes</h1>
+                <p class="faq-hero__subtitle">
+                    Encontrá respuestas a las consultas más comunes sobre nuestro jardín
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq-section">
+            <div class="container">
+                <!-- Search Filter -->
+                <div class="faq-search">
+                    <div class="faq-search__wrapper">
+                        <i class="fa-solid fa-magnifying-glass faq-search__icon"></i>
+                        <input type="text" id="faq-search-input" class="faq-search__input"
+                            placeholder="Buscar pregunta...">
+                    </div>
+                </div>
+
+                <!-- FAQ List -->
+                <div class="faq-list" id="faq-list">
+                    <!-- Pregunta 1 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Cuáles son los horarios del jardín?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Ofrecemos dos modalidades de horarios:</p>
+                                <p><strong>Jornada simple:</strong> de 9 a 12 horas (turno mañana) o de 14 a 17 horas (turno tarde). Opcionalmente se puede contratar pre-hora y post-hora.</p>
+                                <p><strong>Jornada completa:</strong> de 9 a 17 horas, que incluye almuerzo y descanso. También con opción de pre-hora y post-hora.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Qué salas tienen disponibles?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Contamos con salas para todas las edades:</p>
+                                <ul>
+                                    <li>Sala de lactantes (5 a 12 meses)</li>
+                                    <li>Sala de 1 año</li>
+                                    <li>Sala de 2 años</li>
+                                    <li>Sala de 3 años</li>
+                                </ul>
+                                <p>Cada sala está adaptada a las necesidades específicas de cada etapa evolutiva.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Cómo es la alimentación en jornada completa?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Para los niños que asisten en jornada completa, ofrecemos un servicio de comedor con menús balanceados y nutritivos adaptados a cada edad.</p>
+                                <p>Trabajamos con alimentos frescos y tenemos en cuenta restricciones alimentarias y alergias específicas de cada niño. Los menús son planificados mensualmente y compartidos con las familias.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Qué actividades especiales ofrecen?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Nuestra propuesta incluye múltiples actividades especializadas:</p>
+                                <ul>
+                                    <li><strong>Música:</strong> Estimulación musical y ritmo</li>
+                                    <li><strong>Plástica:</strong> Expresión artística y creatividad</li>
+                                    <li><strong>Educación física:</strong> Desarrollo motriz</li>
+                                    <li><strong>Huerta:</strong> Contacto con la naturaleza y enfoque ambientalista</li>
+                                    <li><strong>Talleres y proyectos:</strong> Actividades temáticas variadas</li>
+                                    <li><strong>Clases abiertas:</strong> Participación de las familias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Trabajan con niños con capacidades diferentes?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Sí, somos pioneros en integración inclusiva. Fuimos uno de los primeros jardines de la zona en desarrollar un proyecto de integración para niños con capacidades diferentes.</p>
+                                <p>Contamos con más de 15 años de experiencia haciendo realidad la inclusión, apostando a la igualdad de oportunidades en el camino de la socialización. Trabajamos en conjunto con profesionales especializados y las familias.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Cuál es su propuesta pedagógica?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Nuestra pedagogía se basa en tres pilares fundamentales:</p>
+                                <p><strong>El afecto</strong> como base del proceso educativo, creando un ambiente de confianza y contención.</p>
+                                <p><strong>El juego</strong> como herramienta fundamental de aprendizaje, respetando que es el lenguaje natural de los niños.</p>
+                                <p><strong>El respeto por los tiempos individuales</strong>, entendiendo que cada niño tiene su propio ritmo de desarrollo y aprendizaje.</p>
+                                <p>Trabajamos con un enfoque integral que abarca las áreas social, científica, motriz y de expresión.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Cómo es el proceso de inscripción?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>El proceso de inscripción es sencillo:</p>
+                                <ol>
+                                    <li>Contactanos por teléfono (4585-7694), email (infohermanosol@gmail.com) o a través del formulario de contacto en nuestra web</li>
+                                    <li>Coordinamos una visita al jardín para que conozcan nuestras instalaciones y propuesta pedagógica</li>
+                                    <li>Si deciden inscribirse, completamos la documentación necesaria</li>
+                                    <li>Realizamos un período de adaptación gradual para que el niño se familiarice con el espacio y las maestras</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 8 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Tienen colonia de vacaciones?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Sí, ofrecemos colonia de vacaciones durante los períodos de receso escolar.</p>
+                                <p>La colonia mantiene nuestra filosofía de aprendizaje a través del juego, con actividades recreativas, talleres especiales, juegos con agua (en verano) y propuestas lúdicas adaptadas a cada edad.</p>
+                                <p>Es una excelente opción para que los niños continúen socializando y divirtiéndose en un entorno conocido y seguro.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 9 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Cuántos metros tiene el patio de juegos?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>Contamos con un amplio patio descubierto de 250 m² especialmente diseñado para el juego y la actividad física.</p>
+                                <p>El patio está sectorizado por edades para garantizar la seguridad de todos los niños, permitiendo que cada grupo disfrute del espacio de manera apropiada a su etapa de desarrollo.</p>
+                                <p>Además, tenemos un patio cubierto para días de lluvia y un salón de usos múltiples para actividades especiales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 10 -->
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-question" data-faq-question>
+                            <span class="faq-question__text">¿Qué significa su enfoque ambientalista?</span>
+                            <i class="fa-solid fa-chevron-down faq-question__icon"></i>
+                        </button>
+                        <div class="faq-answer" data-faq-answer>
+                            <div class="faq-answer__content">
+                                <p>El lineamiento ambientalista es uno de nuestros pilares diferenciadores. Creemos en formar niños conscientes y respetuosos del medio ambiente desde temprana edad.</p>
+                                <p>Esto se refleja en actividades concretas como:</p>
+                                <ul>
+                                    <li>Nuestra <strong>huerta</strong>, donde los niños aprenden sobre el ciclo de las plantas y el cuidado de la tierra</li>
+                                    <li>Proyectos de reciclaje y separación de residuos</li>
+                                    <li>Actividades que toman al ambiente natural como punto de partida del aprendizaje</li>
+                                    <li>Contacto directo con la naturaleza en nuestros espacios verdes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No results message -->
+                <div class="faq-no-results" id="faq-no-results" style="display: none;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>No se encontraron preguntas que coincidan con tu búsqueda.</p>
+                    <small>Intentá con otras palabras clave o <a href="../index.html#contacto">contactanos directamente</a></small>
+                </div>
+
+                <!-- CTA -->
+                <div class="faq-cta">
+                    <h3>¿No encontraste lo que buscabas?</h3>
+                    <p>Estamos acá para ayudarte. Contactanos y te respondemos todas tus dudas.</p>
+                    <a href="../index.html#contacto" class="btn btn-primary">Contactanos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Whatsapp button -->
+    <section class="whatsapp-section">
+        <div class="whatsapp-section__container">
+            <a href="https://wa.me/54912345678" class="whatsapp-section__link" target="_blank">
+                <i class="fa-brands fa-whatsapp whatsapp-section__icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <section class="back-to-top">
+        <div class="back-to-top__container" id="btnBackToTop">
+            <a href="#" class="back-to-top__link">
+                <i class="fa-solid fa-arrow-up back-to-top__icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo">Jardín Modelo Hermano Sol</span>
+                    </div>
+                    <p class="footer__tagline">
+                        Registro RIEA: n° 74
+                    </p>
+                    <p class="footer__tagline">
+                        Ministerio de educación GCBA
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Propuesta pedagógica</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#propuesta" class="footer__link">Áreas Pedagógicas</a></li>
+                            <li><a href="../index.html#espacios" class="footer__link">Espacios</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">El jardín</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#salas" class="footer__link">Salas</a></li>
+                            <li><a href="../index.html#actividades" class="footer__link">Actividades</a></li>
+                            <li><a href="#" class="footer__link">Colonia de vacaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Información</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Inscripción</a></li>
+                            <li><a href="#" class="footer__link">Reglamento</a></li>
+                            <li><a href="./preguntas-frecuentes.html" class="footer__link">Preguntas Frecuentes</a></li>
+                            <li><a href="../index.html#contacto" class="footer__link">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Jardín Hermano Sol.
+                </p>
+                <p class="footer__copyright"><small> Todos los derechos reservados.</small></p>
+                <p class="footer__copyright">Desarrollado por <a href="https://mariano.estudiorec.com.ar">Mariano
+                        Vazquez</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/backToTop.js"></script>
+    <script src="../js/faq.js"></script>
+</body>
+
+</html>

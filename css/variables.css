@@ -77,6 +77,7 @@
   --transition-fast: 0.15s ease;
   --transition-normal: 0.2s ease;
   --transition-slow: 0.3s ease;
+  --transition-extra-slow: 0.6s ease;
 
   /* === ESPACIADO === */
   --spacing-xs: 0.25rem;   /* 4px */
