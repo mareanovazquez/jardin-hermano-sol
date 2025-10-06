@@ -420,7 +420,7 @@ html {
 
 .space-img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     transition: transform var(--transition-normal);
 }
@@ -677,20 +677,9 @@ html {
 
 .activity-item {
     text-align: center;
-
-    /* background-color: var(--color-white-cold); */
-    /* border: var(--border-width) solid var(--border-color-neutral); */
-    border-radius: var(--border-radius-sm);
-    /* box-shadow: var(--shadow-subtle); */
-    transition: all var(--transition-normal);
-    /* border-bottom: 3px solid rgba(71, 70, 71, 0.2); */
 }
 
-.activity-item:hover i {
-    filter: drop-shadow(3px 3px 0px rgba(30, 33, 43, 0.12));
-    transform: translateY(-1px);
-    transition: 0.5s;
-}
+
 
 .activity-icon {
     font-size: 2.5rem;
@@ -698,6 +687,8 @@ html {
     display: block;
     color: var(--color-energy-yellow);
 }
+
+
 
 
 
@@ -1267,6 +1258,11 @@ address {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .contact-section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .contact-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1454,7 +1450,7 @@ address {
     }
 
     .activities-grid {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -1501,11 +1497,12 @@ address {
     }
 
     .modal p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        padding-bottom: 10px;
     }
 
     .modal-content-wrapper {
-        width: 65%;
+        width: 70%;
     }
 
 
