@@ -88,6 +88,29 @@
   --spacing-2xl: 3rem;     /* 48px */
   --spacing-3xl: 4rem;     /* 64px */
 
+  /* variables.css - Jardín Hermano Sol */
+
+/* === ANIMACIONES === */
+/* Duraciones */
+--anim-duration-fast: 0.5s;
+--anim-duration-normal: 0.7s;
+--anim-duration-slow: 0.8s;
+
+/* Timings */
+--anim-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+--anim-timing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+/* Distancias de transformación */
+--anim-distance-sm: 20px;
+--anim-distance-md: 30px;
+--anim-distance-lg: 40px;
+--anim-distance-xl: 50px;
+
+/* Delays base */
+--anim-delay-1: 0.1s;
+--anim-delay-2: 0.2s;
+--anim-delay-3: 0.3s;
+--anim-delay-4: 0.4s;
   /* BTN WHATSAPP */
     --background-color-whatsapp: #25d366;
     --background-color-hover-whastapp: #075e54;

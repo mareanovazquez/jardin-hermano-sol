@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // CONFIGURACIÓN BASE para Jardín Hermano Sol
+    // CONFIGURACIÓN BASE para Jardín Hermano Sol. Valores por defecto de animación.
     const CONFIG = {
         selector: '.animate-on-scroll', 
         visibleClass: 'visible',
@@ -162,18 +162,17 @@ document.addEventListener('DOMContentLoaded', function() {
         threshold: 0.4,
         rootMargin: '0px 0px -50px 0px'
     });
-});
 
-// FUNCIÓN GLOBAL para usar desde otros scripts
+    // Ahora window.createScrollAnimation funcionará
 window.createScrollAnimation = function(selector, options = {}) {
-    const defaultConfig = {
-        visibleClass: 'visible',
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px',
-        animateOnce: true
-    };
-    
+    const defaultConfig = { /* ... */ };
     const config = { ...defaultConfig, ...options, selector };
-    
     return initializeScrollAnimation(config);
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Solo las inicializaciones aquí
+    initializeScrollAnimation({ /* ... */ });
+});
+});
+

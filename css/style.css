@@ -2,6 +2,7 @@
 
 
 @import url(./variables.css);
+@import url('./scroll-animations.css');
 @import url(./components.css);
 
 /* ===== RESET Y BASE ===== */
