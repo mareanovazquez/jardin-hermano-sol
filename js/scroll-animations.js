@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeScrollAnimation({
         selector: '.space-card',
         visibleClass: 'space-visible',
-        threshold: 0.2
+        threshold: 0.3
     });
 
     // Cards de áreas pedagógicas
