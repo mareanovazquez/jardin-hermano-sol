@@ -7,8 +7,9 @@ let contenedorModal = document.getElementById('contenedor-modal');
 // Función para desplegar el modal
 function desplegarModal() {
     let rutaImagen = this.getAttribute('src');
-    let textoImagen = this.getAttribute('alt');
+    let altImagen = this.getAttribute('alt');
     let tituloImagen = this.getAttribute('data-title') || 'Espacio del jardín';
+    let textoImagen = this.getAttribute ('data-description') || "Espacio del jardín";
 
     // Crear estructura del modal
     let modal = document.createElement('div');
@@ -20,7 +21,7 @@ function desplegarModal() {
 
     let imagenModal = document.createElement('img');
     imagenModal.setAttribute('src', rutaImagen);
-    imagenModal.setAttribute('alt', tituloImagen);
+    imagenModal.setAttribute('alt', altImagen);
 
     let tituloModal = document.createElement('h3');
     tituloModal.textContent = tituloImagen;
