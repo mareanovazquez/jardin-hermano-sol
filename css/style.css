@@ -666,7 +666,16 @@ html {
     color: var(--color-medium-gray);
     line-height: var(--line-height-relaxed);
 }
-
+.text__logo {
+    font-family: var(--font-logo);
+    color: var(--color-yellow-background);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.5px var(--color-energy-yellow);
+    text-shadow: 2px 2px 0px var(--color-energy-yellow);
+    letter-spacing: -.9px;
+    font-size: var(--font-size-2xl);
+    }
 
 /* ===== ACTIVIDADES ===== */
 .activities-grid {
@@ -1471,6 +1480,7 @@ address {
         left: 0;
     }
 
+    
     /* Contact */
     .contact-methods {
         grid-template-columns: 1fr;
