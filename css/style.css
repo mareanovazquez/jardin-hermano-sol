@@ -210,6 +210,15 @@ html {
 }
 
 
+.hero__main-logo {
+     font-family: var(--font-logo);
+    color: var(--color-white-cold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.5px var(--color-energy-yellow);
+    text-shadow: 2px 2px 0px var(--color-energy-yellow);
+    letter-spacing: -.9px;
+    font-size: 3rem;}
 
 .hero__title {
     font-size: 2rem;
@@ -1384,8 +1393,12 @@ address {
 @media (min-width: 992px) {
 
     /* Hero */
+
+    .hero__main-logo {
+        font-size: 5rem;
+    }
     .hero__title {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .header__logo .logo {
@@ -1537,7 +1550,7 @@ address {
 /* ===== LARGE DESKTOP ===== */
 @media (min-width: 1200px) {
     .hero__title {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .modal-content-wrapper {
