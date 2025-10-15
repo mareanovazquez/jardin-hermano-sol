@@ -332,10 +332,9 @@ html {
 .salas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    height: 700px;
-    /* Altura fija para mantener proporciones */
+    
     margin: var(--spacing-xl) 0;
 }
 
@@ -348,6 +347,7 @@ html {
     transition: transform var(--transition-normal);
     background-color: var(--color-white-pearl);
     box-shadow: var(--shadow-subtle);
+    height: 250px;
 }
 
 .sala-card:hover {
@@ -365,35 +365,7 @@ html {
 }
 
 
-/* Posicionamiento específico de cada card */
-.sala-card-1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 6 / span 6;
-    display: none;
-}
 
-.sala-card-2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-}
-
-.sala-card-3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 3;
-}
-
-.sala-card-4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 5;
-}
-
-.sala-card-5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 7;
-}
 
 
 
@@ -1336,43 +1308,13 @@ address {
 
     .salas-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 20px;
-        height: 600px;
+       
     }
 
-    .sala-card-1 {
-        display: block;
-        grid-column: span 2 / span 2;
-        grid-row: span 4 / span 4;
-    }
-
-    .sala-card-2 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-    }
-
-    .sala-card-3 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 3;
-    }
-
-    .sala-card-4 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-row-start: 5;
-    }
-
-    .sala-card-5 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 5;
-    }
+    
 
     .toast {
         bottom: 50px;
@@ -1421,49 +1363,15 @@ address {
 
     .salas-grid {
         width: 80%;
-        height: 700px;
+       
         margin-left: auto;
         margin-right: auto;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
 
     }
 
-    .sala-card-1 {
-        grid-column: span 2 / span 2;
-        grid-row: span 6 / span 6;
-    }
-
-    .sala-card-2 {
-        grid-column: span 2 / span 2;
-        grid-row: span 3 / span 3;
-        grid-column-start: 3;
-    }
-
-    .sala-card-3 {
-        grid-column: span 2 / span 2;
-        grid-row: span 3 / span 3;
-        grid-column-start: 3;
-        grid-row-start: 4;
-    }
-
-    .sala-card-4 {
-        grid-column: span 2 / span 2;
-        grid-row: span 3 / span 3;
-        grid-column-start: 5;
-        grid-row-start: 1;
-
-    }
-
-    .sala-card-5 {
-
-        grid-column: span 2 / span 2;
-        grid-row: span 3 / span 3;
-        grid-column-start: 5;
-        grid-row-start: 4;
-        ;
-    }
-
+    
     /* SPACES */
     .spaces-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1526,7 +1434,7 @@ address {
     }
 
     .modal-content-wrapper {
-        width: 70%;
+        width: 75%;
     }
 
 
@@ -1554,8 +1462,8 @@ address {
     }
 
     .modal-content-wrapper {
-        width: 50%;
-        height: 75vh;
+        width: 55%;
+        height: 85vh;
     }
 
 }
