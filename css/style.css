@@ -296,6 +296,8 @@ html {
 }
 
 /* ===== PROPUESTA PEDAGÓGICA ===== */
+
+
 .pedagogical-areas {
     display: grid;
     grid-template-columns: 1fr;
@@ -327,7 +329,12 @@ html {
 }
 
 /* ==== SALAS =====  */
-
+#salas {
+    background-image: url(../assets/tree.svg);
+    background-size: 15%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
 /* ===== SECCIÓN SALAS ===== */
 .salas-grid {
     display: grid;
@@ -364,14 +371,14 @@ html {
     border-radius: var(--border-radius-sm);
 }
 
-
-
-
-
-
-
-
 /* ===== ESPACIOS ===== */
+
+#espacios {
+    background-image: url(../assets/butterfly.svg);
+    background-size: 15%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
 /* Estilos para la galería existente */
 .spaces-grid {
     display: grid;
@@ -587,6 +594,20 @@ html {
 }
 
 /* ===== TIMELINE ===== */
+
+#confianza {
+background-image: url(../assets/flowers.svg);
+background-size: 15%;
+background-position: right bottom;
+background-repeat: no-repeat;
+}
+
+#confianza .container {
+    background-image: url(../assets/clouds.svg);
+    background-size: 20%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
 .timeline {
     position: relative;
     max-width: 800px;
