@@ -680,6 +680,14 @@ background-repeat: no-repeat;
     }
 
 /* ===== ACTIVIDADES ===== */
+
+.section__subtitle--activities {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: var(--spacing-xs);
+}
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -691,18 +699,12 @@ background-repeat: no-repeat;
     text-align: center;
 }
 
-
-
 .activity-icon {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
     display: block;
     color: var(--color-energy-yellow);
 }
-
-
-
-
 
 .activity-title {
     font-size: var(--font-size-base);
@@ -831,6 +833,14 @@ address {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-medium);
+}
+
+.contact-form__title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-main-black);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
 }
 
 .form-row {
