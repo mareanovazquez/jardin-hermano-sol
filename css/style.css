@@ -297,7 +297,18 @@ html {
 
 /* ===== PROPUESTA PEDAGÓGICA ===== */
 
-
+#propuesta{
+    background-image: url(../assets/hands.svg);
+    background-size: 30%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+#propuesta .container {
+    background-image: url(../assets/baloon.svg);
+    background-size: 15%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
 .pedagogical-areas {
     display: grid;
     grid-template-columns: 1fr;
@@ -330,9 +341,16 @@ html {
 
 /* ==== SALAS =====  */
 #salas {
-    background-image: url(../assets/tree.svg);
+    background-image: url(../assets/worm.svg);
     background-size: 15%;
-    background-position: left bottom;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+#salas .container {
+    background-image: url(../assets/sun.svg);
+    background-size: 15%;
+    background-position: left top;
     background-repeat: no-repeat;
 }
 /* ===== SECCIÓN SALAS ===== */
@@ -374,9 +392,16 @@ html {
 /* ===== ESPACIOS ===== */
 
 #espacios {
-    background-image: url(../assets/butterfly.svg);
+    background-image: url(../assets/flower.svg);
     background-size: 15%;
-    background-position: right top;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+#espacios .container {
+    background-image: url(../assets/rainbow.svg);
+    background-size: 20%;
+    background-position: left top;
     background-repeat: no-repeat;
 }
 /* Estilos para la galería existente */
@@ -596,7 +621,7 @@ html {
 /* ===== TIMELINE ===== */
 
 #confianza {
-background-image: url(../assets/flowers.svg);
+background-image: url(../assets/house.svg);
 background-size: 15%;
 background-position: right bottom;
 background-repeat: no-repeat;
@@ -681,6 +706,19 @@ background-repeat: no-repeat;
 
 /* ===== ACTIVIDADES ===== */
 
+#actividades {
+    background-image: url(../assets/heart.svg);
+    background-size: 20%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#actividades .container {
+    background-image: url(../assets/barrilete.svg);
+    background-size: 15%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
 .section__subtitle--activities {
     width: 80%;
     margin-left: auto;
