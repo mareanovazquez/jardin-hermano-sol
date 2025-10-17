@@ -715,8 +715,8 @@ background-repeat: no-repeat;
 
 #actividades .container {
     background-image: url(../assets/barrilete.svg);
-    background-size: 15%;
-    background-position: right bottom;
+    background-size: 20%;
+    background-position: right top;
     background-repeat: no-repeat;
 }
 .section__subtitle--activities {
