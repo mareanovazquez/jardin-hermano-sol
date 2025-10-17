@@ -211,14 +211,15 @@ html {
 
 
 .hero__main-logo {
-     font-family: var(--font-logo);
+    font-family: var(--font-logo);
     color: var(--color-white-cold);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 0.5px var(--color-energy-yellow);
     text-shadow: 2px 2px 0px var(--color-energy-yellow);
     letter-spacing: -.9px;
-    font-size: 3rem;}
+    font-size: 3rem;
+}
 
 .hero__title {
     font-size: 2rem;
@@ -280,7 +281,7 @@ html {
 .section__header {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
-   width: 80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -297,18 +298,18 @@ html {
 
 /* ===== PROPUESTA PEDAGÓGICA ===== */
 
-#propuesta{
+#propuesta {
     background-image: url(../assets/hands.svg);
-    background-size: 30%;
+    background-size: 70%;
     background-position: left top;
     background-repeat: no-repeat;
 }
-#propuesta .container {
-    background-image: url(../assets/baloon.svg);
-    background-size: 15%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
+
+.section__subtitle--propuesta {
+    margin-bottom: var(--spacing-2xl);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .pedagogical-areas {
     display: grid;
     grid-template-columns: 1fr;
@@ -340,26 +341,34 @@ html {
 }
 
 /* ==== SALAS =====  */
-#salas {
+/* #salas {
     background-image: url(../assets/worm.svg);
-    background-size: 15%;
-    background-position: right bottom;
+    background-size: 25%;
+    background-position: center bottom;
     background-repeat: no-repeat;
-}
+} */
 
 #salas .container {
-    background-image: url(../assets/sun.svg);
-    background-size: 15%;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), url(../assets/sun.svg);
+    background-size: 65%;
     background-position: left top;
     background-repeat: no-repeat;
+    ;
+
 }
+
+.section__subtitle--salas {
+    margin-bottom: var(--spacing-2xl);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* ===== SECCIÓN SALAS ===== */
 .salas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    
+
     margin: var(--spacing-xl) 0;
 }
 
@@ -392,18 +401,12 @@ html {
 /* ===== ESPACIOS ===== */
 
 #espacios {
-    background-image: url(../assets/flower.svg);
-    background-size: 15%;
-    background-position: right bottom;
+    background-image: url(../assets/rainbow.svg);
+    background-size: 35%;
+    background-position: 10% top;
     background-repeat: no-repeat;
 }
 
-#espacios .container {
-    background-image: url(../assets/rainbow.svg);
-    background-size: 20%;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
 /* Estilos para la galería existente */
 .spaces-grid {
     display: grid;
@@ -620,19 +623,14 @@ html {
 
 /* ===== TIMELINE ===== */
 
-#confianza {
-background-image: url(../assets/house.svg);
-background-size: 15%;
-background-position: right bottom;
-background-repeat: no-repeat;
-}
-
 #confianza .container {
     background-image: url(../assets/clouds.svg);
-    background-size: 20%;
-    background-position: left top;
+    background-size: 50%;
+    background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 .timeline {
     position: relative;
     max-width: 800px;
@@ -693,6 +691,7 @@ background-repeat: no-repeat;
     color: var(--color-medium-gray);
     line-height: var(--line-height-relaxed);
 }
+
 .text__logo {
     font-family: var(--font-logo);
     color: var(--color-yellow-background);
@@ -702,30 +701,25 @@ background-repeat: no-repeat;
     text-shadow: 2px 2px 0px var(--color-energy-yellow);
     letter-spacing: -.9px;
     font-size: var(--font-size-2xl);
-    }
+}
 
 /* ===== ACTIVIDADES ===== */
 
-#actividades {
-    background-image: url(../assets/heart.svg);
-    background-size: 20%;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-
 #actividades .container {
     background-image: url(../assets/barrilete.svg);
-    background-size: 20%;
+    background-size: 30%;
     background-position: right top;
     background-repeat: no-repeat;
 }
+
 .section__subtitle--activities {
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
     margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-base);
 }
+
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1260,10 +1254,22 @@ address {
     }
 
     /* Grids */
+
+    #propuesta {
+        background-size: 40%;
+        background-position: left top;
+    }
+
     .pedagogical-areas {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* ESPACIOS */
+    #espacios {
+        background-size: 35%;
+        background-position: left 40px;
+        background-attachment: fixed;
+            }
     .spaces-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1310,6 +1316,16 @@ address {
         margin-right: auto;
     }
 
+    /* Actividades */
+
+    #actividades .container {
+        background-size: 25%;
+    }
+
+    .section__subtitle--activities {
+        width: 80%;
+    }
+
     .activities-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -1323,6 +1339,7 @@ address {
         margin-left: auto;
         margin-right: auto;
     }
+
     .contact-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1375,15 +1392,31 @@ address {
         height: 500px !important;
     }
 
+    /* SALAS */
+
+    #salas {
+        background-image: url(../assets/worm.svg);
+        background-size: 10%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+
+    #salas .container {
+        background-image: url(../assets/sun.svg);
+        background-size: 15%;
+        background-position: 20px 0px;
+        background-repeat: no-repeat;
+
+    }
+
     .salas-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 20px;
-       
     }
 
-    
+
 
     .toast {
         bottom: 50px;
@@ -1408,6 +1441,7 @@ address {
     .hero__main-logo {
         font-size: 5rem;
     }
+
     .hero__title {
         font-size: 2rem;
     }
@@ -1421,6 +1455,21 @@ address {
     }
 
     /* Grids */
+    #propuesta {
+        background-image: url(../assets/hands.svg);
+        background-size: 20%;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    #propuesta .container {
+        background-image: url(../assets/baloon.svg);
+        background-size: 15%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .pedagogical-areas {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
@@ -1432,7 +1481,7 @@ address {
 
     .salas-grid {
         width: 80%;
-       
+
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: repeat(2, 1fr);
@@ -1440,8 +1489,11 @@ address {
 
     }
 
-    
+
     /* SPACES */
+    #espacios {
+        background-size: 15%;}
+        
     .spaces-grid {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
@@ -1449,11 +1501,29 @@ address {
         margin-right: auto;
     }
 
+    /* Actividades */
+    #actividades .container {
+        background-size: 20%;
+    }
+
+    .section__subtitle--activities {
+        text-align: left;
+        font-size: var(--font-size-lg);
+    }
+
     .activities-grid {
         grid-template-columns: repeat(6, 1fr);
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #confianza .container {
+        background-image: url(../assets/clouds.svg);
+        background-size: 20%;
+        background-position: 30px 200px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     .timeline-item {
@@ -1470,7 +1540,7 @@ address {
         left: 0;
     }
 
-    
+
     /* Contact */
     .contact-methods {
         grid-template-columns: 1fr;
