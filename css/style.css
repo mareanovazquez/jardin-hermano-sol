@@ -32,9 +32,6 @@ html {
     background-color: var(--color-yellow-background);
 }
 
-.section--green {
-    background-color: var(--color-natural-green);
-}
 
 /* ===== HEADER ===== */
 .header {
@@ -255,25 +252,13 @@ html {
     justify-content: center;
 }
 
-.btn-secondary-link {
-    color: var(--color-white-cold);
-    font-weight: var(--font-weight-medium);
-    text-decoration: none;
-    transition: all var(--transition-normal);
-}
-
-.btn-secondary-link:hover {
-    color: var(--color-white-cold);
-    opacity: 0.8;
-}
-
 .arrow {
     display: inline-block;
     margin-left: var(--spacing-xs);
     transition: transform var(--transition-normal);
 }
 
-.btn-secondary-link:hover .arrow {
+.btn-primary:hover .arrow {
     transform: translateX(4px);
 }
 
@@ -1448,10 +1433,6 @@ address {
 
     .header__logo .logo {
         font-size: 1.6rem;
-    }
-
-    .sun-icon {
-        font-size: 5rem;
     }
 
     /* Grids */
