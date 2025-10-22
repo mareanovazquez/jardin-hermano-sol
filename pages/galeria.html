@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Jardín Hermano Sol</title>
+    <meta name="description"
+        content="Galería de imágenes del Jardín Hermano Sol. Conocé nuestros espacios, salas y momentos especiales.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+
+    <!-- Google Fonts preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/31ff4c85db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header--scrolled" id="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- Logo -->
+                <div class="header__logo">
+                    <a href="../index.html" style="text-decoration: none;">
+                        <h1 class="logo">Jardín Modelo Hermano Sol</h1>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html#salas" class="nav-link">Salas</a></li>
+                        <li><a href="../index.html#espacios" class="nav-link">Espacios</a></li>
+                        <li><a href="../index.html#propuesta" class="nav-link">Propuesta</a></li>
+                        <li><a href="../index.html#actividades" class="nav-link">Actividades</a></li>
+                        <li><a href="./preguntas-frecuentes.html" class="nav-link">Preguntas Frecuentes</a></li>
+                        <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="../index.html#contacto" class="btn btn-primary header__cta">Inscripción 2026</a>
+
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="gallery-hero__title">Galería de Imágenes</h1>
+                <p class="gallery-hero__subtitle">
+                    Momentos especiales y espacios del Jardín Hermano Sol
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery-section">
+            <div class="container">
+                <!-- Filtros opcionales (comentados por ahora) -->
+                <!-- 
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="salas">Salas</button>
+                    <button class="filter-btn" data-filter="espacios">Espacios</button>
+                    <button class="filter-btn" data-filter="actividades">Actividades</button>
+                </div>
+                -->
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Imagen 1 -->
+                    <div class="gallery-item" data-category="salas">
+                        <img src="../img/biblioteca-espacio-calma.JPG" alt="Biblioteca y espacio de la calma"
+                            class="gallery-img" data-title="Biblioteca y espacio de la calma"
+                            data-description="Nuestra biblioteca está nutrida con literatura destinada a la primera infancia, con autores argentinos y otros clásicos. También funciona como espacio de la calma para que niñas y niños puedan apartarse por un rato y encontrar juegos con sentido introspectivo.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Biblioteca</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="gallery-item" data-category="salas">
+                        <img src="../img/nuestras-salas-apaisado.JPG" alt="Sala de deambuladores" class="gallery-img"
+                            data-title="Sala de deambuladores"
+                            data-description="Presentamos propuestas destinadas a satisfacer la necesidad de exploración y movimiento. Al comienzo del día la sala es un espacio para desayunar que luego puede transformarse en un laberinto para desarrollar la motricidad.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Sala de deambuladores</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="gallery-item" data-category="salas">
+                        <img src="../img/sala-planta-baja-grande.JPG" alt="Sala de 2 años" class="gallery-img"
+                            data-title="Sala de 2 años"
+                            data-description="Acompañamos a las niñas y los niños en el proceso de adquisición de habilidades comunicacionales, pautas y rutinas básicas para la convivencia. A las propuestas desarrolladas por la docente se suman las de docentes de educación física y música.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Sala de 2 años</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="gallery-item" data-category="salas">
+                        <img src="../img/sala-planta-alta.jpg" alt="Sala de 3 años" class="gallery-img"
+                            data-title="Sala de 3 años"
+                            data-description="Sumamos escenarios lúdicos que favorecen a la dramatización y nuevos talleres con el objetivo de que se amplíe no sólo el lenguaje oral, sino los lenguajes expresivos como la música, la expresión corporal, la literatura y la plástica.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Sala de 3 años</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 5 -->
+                    <div class="gallery-item" data-category="espacios">
+                        <img src="../img/sum.jpg" alt="Salón de usos múltiples" class="gallery-img"
+                            data-title="Salón de usos múltiples"
+                            data-description="Este gran espacio, de 80 m2, es donde niñas y niños practican educación física y donde se organizan las clases abiertas con las familias. Allí también desplegamos los escenarios psicomotrices.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">SUM</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 6 -->
+                    <div class="gallery-item" data-category="espacios">
+                        <img src="../img/patio-descubierto.png" alt="Patio descubierto" class="gallery-img"
+                            data-title="Patio descubierto de 200m²"
+                            data-description="El corazón del jardín es nuestro patio de juegos de 200 m2, con una amplia vista del cielo. Hay juegos de plaza adecuados a la primera infancia, además de árboles y arbustos donde pueden tener un contacto diario con la naturaleza.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Patio descubierto</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 7 -->
+                    <div class="gallery-item" data-category="espacios">
+                        <img src="../img/patio-sectorizado.jpg" alt="Patio sectorizado" class="gallery-img"
+                            data-title="Patio sectorizado descubierto"
+                            data-description="Un espacio del patio descubierto está destinado exclusivamente a las niñas y niños más pequeños. Allí pueden explorar y jugar en total tranquilidad mientras los chicos más grandes corren libremente por el resto del patio.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Patio sectorizado</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 8 -->
+                    <div class="gallery-item" data-category="espacios">
+                        <img src="../img/patio-cubierto.jpg" alt="Patio cubierto" class="gallery-img"
+                            data-title="Patio cubierto"
+                            data-description="Un sector del patio está techado como opción para que niños y niñas puedan jugar fuera de sus salas los días de lluvia. También permite el estacionamiento de los cochecitos durante las horas de clases.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Patio cubierto</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 9 -->
+                    <div class="gallery-item" data-category="espacios">
+                        <img src="../img/huerta.png" alt="Huerta del jardín" class="gallery-img" data-title="Huerta"
+                            data-description="Fue uno de los primeros proyectos cuando se creó el edificio de Hermano Sol, hace más de 40 años, con el objetivo de trabajar el ambientalismo como eje pedagógico. Junto con sus docentes, los niños y las niñas colaboran con tareas de huerta y pueden observar el desarrollo de sus plantaciones.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Huerta</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 10 -->
+                    <div class="gallery-item" data-category="actividades">
+                        <img src="../img/colonia-vacaciones-2.jpg" alt="Colonia de vacaciones - juegos con agua"
+                            class="gallery-img" data-title="Colonia de vacaciones"
+                            data-description="Durante enero y la primera quincena de febrero en los espacios del jardín funciona una colonia de vacaciones para niñas y niños, con la misma opción de horarios que durante el año lectivo. El principal atractivo son los juegos con agua, dentro y fuera de las piletas.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Colonia - Juegos</h3>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 11 -->
+                    <div class="gallery-item" data-category="actividades">
+                        <img src="../img/colonia-vacaciones.jpg" alt="Colonia de vacaciones - actividades"
+                            class="gallery-img" data-title="Colonia de vacaciones"
+                            data-description="Las propuestas del verano son recreativas y el principal atractivo son los juegos con agua, dentro y fuera de las piletas (pelopincho). Se priorizan los juegos al aire libre y, en las salas, los juegos motrices; reservando propuestas del eje artístico para los días de lluvia.">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-overlay__title">Colonia - Actividades</h3>
+                        </div>
+                    </div>
+
+                    <!-- Puedes agregar más imágenes aquí siguiendo el mismo patrón -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Container -->
+    <div id="contenedor-modal"></div>
+
+    <!-- Whatsapp button -->
+    <section class="whatsapp-section">
+        <div class="whatsapp-section__container">
+            <a href="https://wa.me/54912345678" class="whatsapp-section__link" target="_blank">
+                <i class="fa-brands fa-whatsapp whatsapp-section__icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <section class="back-to-top">
+        <div class="back-to-top__container" id="btnBackToTop">
+            <a href="#" class="back-to-top__link">
+                <i class="fa-solid fa-arrow-up back-to-top__icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo">Jardín Modelo Hermano Sol</span>
+                    </div>
+                    <p class="footer__tagline">
+                        Registro RIEA: N° 74
+                    </p>
+                    <p class="footer__tagline">
+                        Ministerio de Educación GCBA
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Propuesta pedagógica</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#propuesta" class="footer__link">Áreas pedagógicas</a></li>
+                            <li><a href="../index.html#espacios" class="footer__link">Espacios</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">El jardín</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#salas" class="footer__link">Salas</a></li>
+                            <li><a href="../index.html#actividades" class="footer__link">Actividades</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Información</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#contacto" class="footer__link">Inscripción 2026</a></li>
+                            <li><a href="./preguntas-frecuentes.html" class="footer__link">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Jardín Hermano Sol.
+                </p>
+                <p class="footer__copyright"><small> Todos los derechos reservados.</small></p>
+                <p class="footer__copyright">Desarrollado por <a href="https://mariano.estudiorec.com.ar">Mariano
+                        Vazquez</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/header-animation.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/backToTop.js"></script>
+    <script src="../js/gallery-modal.js"></script>
+
+</body>
+
+</html>
