@@ -60,14 +60,20 @@ function crearModal() {
     let flechaIzquierda = document.createElement('button');
     flechaIzquierda.setAttribute('class', 'flecha-galeria flecha-izquierda');
     flechaIzquierda.setAttribute('aria-label', 'Imagen anterior');
-    flechaIzquierda.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+    const iconoIzquierda = document.createElement('i');
+    iconoIzquierda.setAttribute('class', 'fa-solid fa-chevron-left');
+    iconoIzquierda.setAttribute('aria-hidden', 'true');
+    flechaIzquierda.appendChild(iconoIzquierda);
     flechaIzquierda.addEventListener('click', () => navegarImagen(-1));
 
     // Flecha derecha
     let flechaDerecha = document.createElement('button');
     flechaDerecha.setAttribute('class', 'flecha-galeria flecha-derecha');
     flechaDerecha.setAttribute('aria-label', 'Imagen siguiente');
-    flechaDerecha.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+    const iconoDerecha = document.createElement('i');
+    iconoDerecha.setAttribute('class', 'fa-solid fa-chevron-right');
+    iconoDerecha.setAttribute('aria-hidden', 'true');
+    flechaDerecha.appendChild(iconoDerecha);
     flechaDerecha.addEventListener('click', () => navegarImagen(1));
 
     // Ensamblar modal
@@ -105,16 +111,10 @@ function actualizarModal() {
     const tituloImagen = imagenActual.getAttribute('data-title') || 'Imagen del jardín';
     const textoImagen = imagenActual.getAttribute('data-description') || '';
 
-    // Actualizar imagen con efecto de transición
     const imagenModal = modal.querySelector('.modal-gallery-image');
-    imagenModal.style.opacity = '0';
+    imagenModal.setAttribute('src', rutaImagen);
+    imagenModal.setAttribute('alt', altImagen);
     
-    setTimeout(() => {
-        imagenModal.setAttribute('src', rutaImagen);
-        imagenModal.setAttribute('alt', altImagen);
-        imagenModal.style.opacity = '1';
-    }, 200);
-
     // Actualizar título y texto
     const tituloModal = modal.querySelector('h3');
     const textoModal = modal.querySelector('p');
@@ -142,11 +142,11 @@ function cerrarModal() {
 }
 
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Event listeners para las imágenes
     galeriaImagenes.forEach((imagen, index) => {
         imagen.addEventListener('click', () => abrirGaleriaModal(index));
-        
+
         // Hacer las imágenes accesibles por teclado
         imagen.setAttribute('tabindex', '0');
         imagen.addEventListener('keydown', (e) => {
@@ -160,10 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners para teclado
     document.addEventListener('keydown', (event) => {
         let modal = document.getElementById('modal-galeria');
-        
+
         if (!modal) return;
 
-        switch(event.key) {
+        switch (event.key) {
             case 'Escape':
                 cerrarModal();
                 break;
