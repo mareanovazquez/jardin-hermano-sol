@@ -1,7 +1,7 @@
 // gallery-modal.js - Jardín Hermano Sol - Galería de Imágenes con Navegación
 
 // Variables globales
-let galeriaImagenes = document.getElementsByClassName('gallery-img');
+let galeriaImagenes = document.querySelectorAll('.gallery-img');
 let contenedorModal = document.getElementById('contenedor-modal');
 let indiceActual = 0;
 
@@ -144,7 +144,7 @@ function cerrarModal() {
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
     // Event listeners para las imágenes
-    Array.from(galeriaImagenes).forEach((imagen, index) => {
+    galeriaImagenes.forEach((imagen, index) => {
         imagen.addEventListener('click', () => abrirGaleriaModal(index));
         
         // Hacer las imágenes accesibles por teclado
