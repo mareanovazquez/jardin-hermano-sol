@@ -88,7 +88,7 @@
 
 /* ===== MODAL ESPECÍFICO PARA GALERÍA ===== */
 .modal-gallery-image {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease;
 }
 
 .modal-gallery {
@@ -118,28 +118,30 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: auto;    
+    height: auto;
     border-radius: var(--border-radius-md);
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: modalSlideIn var(--transition-slow) ease;
     color: var(--color-white-cold);
-    }
+}
 
-    .modal-gallery-titulo {
-        font-size: var(--font-size-xl);
-        font-weight: var(--font-weight-semibold);
-        color: var(--color-white-cold);
-        margin-left: 20px;
-            }
+.modal-gallery-titulo {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white-cold);
+    margin: var(--spacing-md) var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    letter-spacing: 1px;
+}
 
 /* Contador de imágenes */
 .modal-contador {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgba(1, 25, 54, 0.8);
+    background-color: rgba(1, 25, 54, 0.9);
     color: var(--color-white-cold);
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--border-radius-sm);
@@ -237,8 +239,9 @@
     .modal-content-wrapper-gallery {
         width: 65%;
         height: auto;
-        
+
     }
+
     .flecha-galeria {
         width: 60px;
         height: 60px;

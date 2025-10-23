@@ -95,7 +95,6 @@ function crearModal() {
     });
 }
 
-// Función para actualizar contenido del modal
 function actualizarModal() {
     const modal = document.getElementById('modal-galeria');
     if (!modal) return;
@@ -106,11 +105,19 @@ function actualizarModal() {
     const tituloImagen = imagenActual.getAttribute('data-title') || 'Imagen del jardín';
     
     const imagenModal = modal.querySelector('.modal-gallery-image');
-    imagenModal.setAttribute('src', rutaImagen);
-    imagenModal.setAttribute('alt', altImagen);
     
-    // Actualizar título y texto
-    const tituloModal = modal.querySelector('h3');
+    // Fade out
+    imagenModal.style.opacity = '0';
+    
+    // Esperar a que termine el fade out, luego cambiar imagen
+    setTimeout(() => {
+        imagenModal.setAttribute('src', rutaImagen);
+        imagenModal.setAttribute('alt', altImagen);
+        imagenModal.style.opacity = '1'; // Fade in
+    }, 200);
+    
+    // Actualizar texto (no necesita esperar)
+    const tituloModal = modal.querySelector('.modal-gallery-titulo');
     const contadorModal = modal.querySelector('.modal-contador');
 
     tituloModal.textContent = tituloImagen;
