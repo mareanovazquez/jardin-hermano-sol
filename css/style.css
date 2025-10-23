@@ -460,7 +460,6 @@ html {
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     animation: modalFadeIn var(--transition-slow) ease;
     pointer-events: all;

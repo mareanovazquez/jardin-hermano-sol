@@ -17,15 +17,14 @@ function crearModal() {
     const rutaImagen = imagenActual.getAttribute('src');
     const altImagen = imagenActual.getAttribute('alt');
     const tituloImagen = imagenActual.getAttribute('data-title') || 'Imagen del jardín';
-    const textoImagen = imagenActual.getAttribute('data-description') || '';
-
+    
     // Crear estructura del modal
     let modal = document.createElement('div');
-    modal.setAttribute('class', 'modal');
+    modal.setAttribute('class', 'modal-gallery');
     modal.setAttribute('id', 'modal-galeria');
 
     let modalContentWrapper = document.createElement('div');
-    modalContentWrapper.setAttribute('class', 'modal-content-wrapper');
+    modalContentWrapper.setAttribute('class', 'modal-content-wrapper-gallery');
 
     // Imagen
     let imagenModal = document.createElement('img');
@@ -34,14 +33,11 @@ function crearModal() {
     imagenModal.setAttribute('class', 'modal-gallery-image');
 
     // Título
-    let tituloModal = document.createElement('h3');
+    let tituloModal = document.createElement('h4');
+    tituloModal.setAttribute('class', 'modal-gallery-titulo');
     tituloModal.textContent = tituloImagen;
 
-    // Descripción
-    let textoModal = document.createElement('p');
-    textoModal.textContent = textoImagen;
-
-    // Contador de imágenes
+       // Contador de imágenes
     let contadorModal = document.createElement('div');
     contadorModal.setAttribute('class', 'modal-contador');
     contadorModal.textContent = `${indiceActual + 1} / ${galeriaImagenes.length}`;
@@ -79,7 +75,6 @@ function crearModal() {
     // Ensamblar modal
     modalContentWrapper.appendChild(imagenModal);
     modalContentWrapper.appendChild(tituloModal);
-    modalContentWrapper.appendChild(textoModal);
     modalContentWrapper.appendChild(contadorModal);
 
     modal.appendChild(modalContentWrapper);
@@ -109,19 +104,16 @@ function actualizarModal() {
     const rutaImagen = imagenActual.getAttribute('src');
     const altImagen = imagenActual.getAttribute('alt');
     const tituloImagen = imagenActual.getAttribute('data-title') || 'Imagen del jardín';
-    const textoImagen = imagenActual.getAttribute('data-description') || '';
-
+    
     const imagenModal = modal.querySelector('.modal-gallery-image');
     imagenModal.setAttribute('src', rutaImagen);
     imagenModal.setAttribute('alt', altImagen);
     
     // Actualizar título y texto
     const tituloModal = modal.querySelector('h3');
-    const textoModal = modal.querySelector('p');
     const contadorModal = modal.querySelector('.modal-contador');
 
     tituloModal.textContent = tituloImagen;
-    textoModal.textContent = textoImagen;
     contadorModal.textContent = `${indiceActual + 1} / ${galeriaImagenes.length}`;
 }
 
